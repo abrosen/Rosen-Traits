@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <TraitDef>
+        <defName>RosenBurly</defName>
+        <commonality>1</commonality>
+        <degreeDatas>
+            <li>
+                <label>sturdy</label>
+                <description>{PAWN_nameDef} is as sturdy as a mule and kicks like one too.</description>
+                <degree>1</degree>
+                <statOffsets>
+                    <CarryWeight MayRequire="CETeam.CombatExtended">5</CarryWeight>
+                </statOffsets>
+                <statFactors>
+                    <MeleeDamageFactor>1.1</MeleeDamageFactor>
+                </statFactors>
+            </li>
+            <li>
+                <label>strapping</label>
+                <description>{PAWN_nameDef} is built like an ox and hits like one too.</description>
+                <degree>2</degree>
+                <statOffsets>
+                    <CarryWeight MayRequire="CETeam.CombatExtended">10</CarryWeight>
+                </statOffsets>
+                <statFactors>
+                    <MeleeDamageFactor>1.2</MeleeDamageFactor>
+                </statFactors>
+            </li>
+            <li>
+                <label>stout</label>
+                <description>{PAWN_nameDef} is built like a muffalo and hits like one too.</description>
+                <degree>3</degree>
+                <statOffsets>
+                    <CarryWeight MayRequire="CETeam.CombatExtended">15</CarryWeight>
+                </statOffsets>
+                <statFactors>
+                    <MeleeDamageFactor>1.3</MeleeDamageFactor>
+                </statFactors>
+            </li>
+        </degreeDatas>
+        <conflictingTraits>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
+            <li>Wimp</li>
+        </conflictingTraits>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>Rosen_SteadyHands</defName>
+        <commonality>1</commonality>
+         <degreeDatas>
+             <li>
+                <label>steady handed</label>
+                <description>{PAWN_nameDef}'s hands always move exactly how {PAWN_pronoun} wants and needs them to.</description>
+                <statOffsets>
+                    <MedicalTendQuality>0.1</MedicalTendQuality>
+                    <MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
+                    <!-- Looks, like a lot, less than you get from being high on go-juice and lucy-->
+                    <AimingAccuracy MayRequire="CETeam.CombatExtended">0.5</AimingAccuracy>
+                </statOffsets>
+                <statFactors>
+                    <MeleeCritChance MayRequire="CETeam.CombatExtended">1.05</MeleeCritChance>
+                </statFactors>
+            </li>
+         </degreeDatas>
+         <conflictingTraits>
+            <li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Clumsy</li>
+        </conflictingTraits>
+    </TraitDef>
+    <!--
+    <TraitDef>
+    <defName>RosenPassionTest</defName>
+        <commonality>0.0</commonality>
+        <forcedPassions>
+            <li>Shooting</li>
+            <li>Melee</li>
+            <li>Construction</li>
+            <li>Mining</li>
+            <li>Cooking</li>
+            <li>Plants</li>
+            <li>Animals</li>
+            <li>Crafting</li>
+            <li>Social</li>
+            <li>Medical</li>
+            <li>Intellectual</li>
+            <li>Artistic</li>
+        </forcedPassions>
+        <degreeDatas>
+            <li>
+            <label>Passionate</label>
+            <description>{PAWN_nameDef} is a god pawn.</description>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+    -->
+
+  
+</Defs>

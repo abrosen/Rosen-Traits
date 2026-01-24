@@ -1,0 +1,17 @@
+<ModMetaData>
+    <name>Professor Rosen's Traits</name>
+    <packageId>professor.rosen.traits</packageId>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <author>Professor Rosen</author>
+    <description>A collection of traits adjusting things that Core and VanillaTraitsExpanded don't touch.  Will be used by my backstories mod, but neither requires the other.</description>
+    <loadAfter>
+        <li>VanillaExpanded.VanillaTraitsExpanded</li>
+        <li>VanillaExpanded.VARME</li>
+        <li>CETeam.CombatExtended</li>
+    </loadAfter>
+    <loadBefore>
+        <li>professor.rosen.backstories</li>
+    </loadBefore>
+</ModMetaData>
