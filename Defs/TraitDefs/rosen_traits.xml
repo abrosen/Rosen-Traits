@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <TraitDef>
-        <defName>RosenBurly</defName>
+        <defName>Rosen_Burly</defName>
         <commonality>1</commonality>
         <degreeDatas>
             <li>
@@ -47,25 +47,91 @@
     <TraitDef>
         <defName>Rosen_SteadyHands</defName>
         <commonality>1</commonality>
-         <degreeDatas>
-             <li>
+        <degreeDatas>
+            <li>
                 <label>steady handed</label>
                 <description>{PAWN_nameDef}'s hands always move exactly how {PAWN_pronoun} wants and needs them to.</description>
                 <statOffsets>
                     <MedicalTendQuality>0.1</MedicalTendQuality>
-                    <MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
-                    <!-- Looks, like a lot, less than you get from being high on go-juice and lucy-->
-                    <AimingAccuracy MayRequire="CETeam.CombatExtended">0.5</AimingAccuracy>
                 </statOffsets>
                 <statFactors>
-                    <MeleeCritChance MayRequire="CETeam.CombatExtended">1.05</MeleeCritChance>
+                    <ShootingAccuracyPawn MayRequire="CETeam.CombatExtended">1.33</ShootingAccuracyPawn>
+                    <MeleeCritChance MayRequire="CETeam.CombatExtended">1.10</MeleeCritChance>
                 </statFactors>
             </li>
-         </degreeDatas>
-         <conflictingTraits>
+        </degreeDatas>
+        <conflictingTraits>
             <li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Clumsy</li>
         </conflictingTraits>
     </TraitDef>
+
+
+    <TraitDef MayRequire="CETeam.CombatExtended">
+        <defName>Rosen_QuickHanded</defName>
+        <commonality>1</commonality>
+        <degreeDatas>
+            <li>
+                <label>quick handed</label>
+                <description>{PAWN_nameDef}'s quick draw would make a western gunslinger jealous.</description>
+                <statFactors>
+                    <AimingDelayFactor>0.75</AimingDelayFactor>
+                    <ReloadSpeed>1.50</ReloadSpeed>
+                </statFactors>
+            </li>
+        </degreeDatas>
+        <conflictingTraits>
+            <li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Clumsy</li>
+        </conflictingTraits>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>Rosen_Indefatigable</defName>
+        <commonality>1</commonality>
+        <degreeDatas>
+            <li>
+                <label>indefatigable</label>
+                <description>A good night's sleep seems to do more for {PAWN_nameDef} than it does for others.</description>
+                <statFactors>
+                    <RestFallRateFactor>0.8</RestFallRateFactor>
+                </statFactors>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>Rosen_Duelist</defName>
+        <commonality>0.5</commonality>
+        <forcedPassions>
+            <li>Shooting</li>
+            <li>Melee</li>
+        </forcedPassions>
+        <degreeDatas>
+            <li>
+                <label>duelist</label>
+                <description>{PAWN_nameDef} is an aficionado of one-on-one combat.</description>
+                <statOffsets>
+                    <MeleeCritChance>0.25</MeleeCritChance>
+                    <MeleeParryChance>0.5</MeleeParryChance>
+                </statOffsets>
+                <possessions>
+                    <MeleeWeapon_LongSword />
+                </possessions>
+            </li>
+        </degreeDatas>
+
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+    </TraitDef>
+
+
+
+
+
     <!--
     <TraitDef>
     <defName>RosenPassionTest</defName>
