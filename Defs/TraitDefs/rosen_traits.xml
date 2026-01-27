@@ -129,6 +129,31 @@
     </TraitDef>
 
 
+    <TraitDef>
+        <defName>Rosen_Motherlode</defName>
+        <commonality>0.5</commonality>
+        <forcedPassions>
+            <li>Mining</li>
+            <li>Crafting</li>
+        </forcedPassions>
+        <degreeDatas>
+            <li>
+                <label>nose for treasure</label>
+                <description>{PAWN_nameDef} always seems to find more resources than others when mining or scavenging.</description>
+                <statOffsets>
+                    <MiningYield>0.2</MiningYield>
+                    <ButcheryMechanoidEfficiency>0.2</ButcheryMechanoidEfficiency>
+                    <DeepDrillingSpeed>0.5</DeepDrillingSpeed>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+        <requiredWorkTags>
+            <li>Mining</li>
+            <li>Crafting</li>
+        </requiredWorkTags>
+    </TraitDef>
+
+
 
 
 
