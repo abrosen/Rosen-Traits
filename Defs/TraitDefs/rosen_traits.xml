@@ -153,7 +153,31 @@
         </requiredWorkTags>
     </TraitDef>
 
+    <TraitDef>
+        <defName>Rosen_Metabolism</defName>
+        <commonality>0.5</commonality>
 
+        <degreeDatas>
+            <li>
+                <degree>-1</degree>
+                <label>fast metabolism</label>
+                <description>{PAWN_nameDef} has a fast metabolism and requires slightly more nutrition than others.</description>
+                <hungerRateFactor>1.1</hungerRateFactor>
+            </li>
+            <li>
+                <degree>1</degree>
+                <label>efficient metabolism</label>
+                <description>{PAWN_nameDef} has an efficient metabolism and requires slightly less nutrition than others.</description>
+                <hungerRateFactor>0.9</hungerRateFactor>
+            </li>
+            <li>
+                <degree>2</degree>
+                <label>optimized metabolism</label>
+                <description>{PAWN_nameDef} has an absurdly optimized metabolism and requires noticably less nutrition than others.</description>
+                <hungerRateFactor>0.8</hungerRateFactor>
+            </li>
+        </degreeDatas>
+    </TraitDef>
 
 
 
