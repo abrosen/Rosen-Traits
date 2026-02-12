@@ -110,11 +110,13 @@
         <degreeDatas>
             <li>
                 <label>duelist</label>
-                <description>{PAWN_nameDef} is an aficionado of one-on-one combat.</description>
+                <description>{PAWN_nameDef} is an aficionado of one-on-one combat and fights with a bit more alacrity than one might expect.</description>
                 <statOffsets>
-                    <MeleeCritChance MayRequire="CETeam.CombatExtended">0.25</MeleeCritChance>
                     <MeleeParryChance MayRequire="CETeam.CombatExtended">0.5</MeleeParryChance>
                 </statOffsets>
+                <statFactors>
+                    <MeleeCooldownFactor>0.9</MeleeCooldownFactor>
+                </statFactors>
                 <possessions>
                     <MeleeWeapon_LongSword />
                 </possessions>
