@@ -105,7 +105,6 @@
         <defName>Rosen_Duelist</defName>
         <commonality>0.5</commonality>
         <forcedPassions>
-            <li>Shooting</li>
             <li>Melee</li>
         </forcedPassions>
         <degreeDatas>
