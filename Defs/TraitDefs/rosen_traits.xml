@@ -181,6 +181,65 @@
     </TraitDef>
 
 
+    <TraitDef>
+        <defName>Rosen_Content</defName>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+            <li>
+                <degree>-1</degree>
+                <label>discontent</label>
+                <description>{PAWN_nameDef} is easily frustrated and requires more time to blow off steam.</description>
+                <statFactors>
+                    <JoyFallRateFactor>1.15</JoyFallRateFactor>
+                </statFactors>
+            </li>
+            <li>
+                <degree>1</degree>
+                <label>content</label>
+                <description>{PAWN_nameDef} is content and requires average recreation.</description>
+                <statFactors>
+                    <JoyFallRateFactor>0.85</JoyFallRateFactor>
+                </statFactors>
+            </li>
+            <li>
+                <degree>2</degree>
+                <label>zen-like</label>
+                <description>{PAWN_nameDef} has achieved a degree of inner peace many people envy.</description>
+                <statOffsets>
+                    <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+                </statOffsets>
+                <statFactors>
+                    <JoyFallRateFactor>0.7</JoyFallRateFactor>
+                </statFactors>  
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+
+    <!--
+    <TraitDef>
+        <defName>Rosen_Content</defName>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+            <li>
+                <degree>-1</degree>
+                <label>discontent</label>
+                <description>{PAWN_nameDef} is easily frustrated and requires more time to blow off some steam.</description>
+                <statFactors>
+                    <JoyFallRateFactor>1.15</JoyFallRateFactor>
+                </statFactors>
+            </li>
+            <li>
+                <degree>1</degree>
+                <label>content</label>
+                <description>{PAWN_nameDef} is easily content and requires average recreation.</description>
+                <statFactors>
+                    <JoyFallRateFactor>0.85</JoyFallRateFactor>
+                <statFactors>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+    -->
 
     <!--
     <TraitDef>
