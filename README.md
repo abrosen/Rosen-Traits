@@ -13,4 +13,4 @@ These are traits that are primarily focused on Combat Extended, modifying some s
 All traits are XML patches, so pretty much only affect stats.
 
 ## Why?
-Like I said, madification of CE stats are a bit of an untapped area.  I also wanted to see what I could modify easily.
+Like I said, modification of CE stats are a bit of an untapped area.  I also wanted to see what I could modify easily.
