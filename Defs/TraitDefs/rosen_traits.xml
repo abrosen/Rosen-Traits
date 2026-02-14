@@ -28,7 +28,7 @@
             </li>
             <li>
                 <label>stout</label>
-                <description>{PAWN_nameDef} is built like a muffalo and hits like one too.</description>
+                <description>{PAWN_nameDef} is more muscular and menacing than a maddened, man-hunting muffalo.</description>
                 <degree>3</degree>
                 <statOffsets>
                     <CarryWeight MayRequire="CETeam.CombatExtended">15</CarryWeight>
