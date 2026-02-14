@@ -44,6 +44,21 @@
         </conflictingTraits>
     </TraitDef>
 
+    <TraitDef MayRequire="CETeam.CombatExtended">
+        <defName>Rosen_PackRat</defName>
+        <commonality>1</commonality>
+        <degreeDatas>
+            <li>
+                <label>pack rat</label>
+                <description>{PAWN_nameDef} always seems to have more on hand than others.</description>
+                <statOffsets>
+                    <CarryBulk>10</CarryBulk>
+                    <CarryWeight>5</CarryWeight>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
     <TraitDef>
         <defName>Rosen_SteadyHands</defName>
         <commonality>1</commonality>
@@ -55,7 +70,7 @@
                     <MedicalTendQuality>0.1</MedicalTendQuality>
                 </statOffsets>
                 <statFactors>
-                    <ShootingAccuracyPawn MayRequire="CETeam.CombatExtended">1.33</ShootingAccuracyPawn>
+                    <ShootingAccuracyPawn>1.33</ShootingAccuracyPawn>
                     <MeleeCritChance MayRequire="CETeam.CombatExtended">1.10</MeleeCritChance>
                 </statFactors>
             </li>
@@ -183,7 +198,7 @@
 
     <TraitDef>
         <defName>Rosen_Content</defName>
-        <commonality>0.5</commonality>
+        <commonality>0.75</commonality>
         <degreeDatas>
             <li>
                 <degree>-1</degree>
@@ -196,7 +211,7 @@
             <li>
                 <degree>1</degree>
                 <label>content</label>
-                <description>{PAWN_nameDef} is content and requires average recreation.</description>
+                <description>Outside of the stressful ups and downs of life on the Rim, {PAWN_nameDef} is easily content.</description>
                 <statFactors>
                     <JoyFallRateFactor>0.85</JoyFallRateFactor>
                 </statFactors>
@@ -204,7 +219,7 @@
             <li>
                 <degree>2</degree>
                 <label>zen-like</label>
-                <description>{PAWN_nameDef} has achieved a degree of inner peace many people envy.</description>
+                <description>{PAWN_nameDef} has naturally achieved a degree of inner peace many people spend their entire life trying to find.</description>
                 <statOffsets>
                     <MentalBreakThreshold>-0.05</MentalBreakThreshold>
                 </statOffsets>
