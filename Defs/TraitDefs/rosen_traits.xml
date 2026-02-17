@@ -230,6 +230,33 @@
         </degreeDatas>
     </TraitDef>
 
+    <TraitDef>
+        <defName>Rosen_VampireSlayer</defName>
+        <commonality>0.5</commonality>
+        <forcedPassions>
+            <li>Melee</li>
+        </forcedPassions>
+        <degreeDatas>
+            <li>
+                <label>bloodfeeder's bane</label>
+                <description>{PAWN_nameDef} received specialized training in slaying sanguophages.  Both proponents and critics of the training regimen note that cutting off the head and putting a stake through the heart work on everything, not just vampiric analogues.</description>
+                <statFactors>
+                    <MeleeCritChance MayRequire="CETeam.CombatExtended">1.5</MeleeCritChance>
+                </statFactors>
+                <skillGains>
+                    <Melee>6</Melee>
+                    <Medicine>4</Medicine>
+                </skillGains>
+                <possessions>
+                    <MeleeWeapon_LongSword />
+                </possessions>
+            </li>
+        </degreeDatas>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Caring</li>
+        </requiredWorkTags>
+    </TraitDef>
 
     <!--
     <TraitDef>
