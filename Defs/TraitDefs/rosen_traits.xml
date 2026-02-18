@@ -232,7 +232,7 @@
 
     <TraitDef>
         <defName>Rosen_VampireSlayer</defName>
-        <commonality>0.5</commonality>
+        <commonality>0.25</commonality>
         <forcedPassions>
             <li>Melee</li>
         </forcedPassions>
@@ -254,7 +254,6 @@
         </degreeDatas>
         <requiredWorkTags>
             <li>Violent</li>
-            <li>Caring</li>
         </requiredWorkTags>
     </TraitDef>
 
